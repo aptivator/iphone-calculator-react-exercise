@@ -89,7 +89,6 @@ export function Calculator({height = '80vh'}) {
     let {current} = state;
     let {operatorEl, operands, operators, lastAction} = current;
     
-
     if(lastAction === calculate) {
       operands.splice(1);
       operators.splice(1);
