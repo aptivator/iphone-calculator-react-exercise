@@ -1,5 +1,5 @@
-import {decimalsMinimum, digitsLimit, displayBaseAspectRatio, displayBaseHeight} from './vars';
-import {errorMessage, operations, priorities}                 from './vars';
+import {decimalsMinimum, digitsLimit, displayBaseAspectRatio}    from './vars';
+import {displayBaseHeight, errorMessage, operations, priorities} from './vars';
 
 function performOperation(operation, operand1, operand2) {
   let result = operations[operation](operand1, operand2);
