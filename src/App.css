@@ -1,0 +1,10 @@
+.size-controller {
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+  margin-bottom: 10px;
+}
+
+.iphone-calculator {
+  margin: 0 auto;
+}
