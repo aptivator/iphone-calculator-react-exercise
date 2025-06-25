@@ -117,8 +117,13 @@ export function Calculator({height = '80vh'}) {
 
   function takeInput(ch) {
     let {current} = state;
-    let {operands, operatorEl, activeIndex} = current;
-    let operand = getOrInitializeOperand(operands, activeIndex);
+    let {operands, operatorEl, activeIndex, lastAction} = current;
+
+    if(lastAction === calculate) {
+      var operand = operands[activeIndex] = '0';
+    } else {
+      operand = getOrInitializeOperand(operands, activeIndex);
+    }
 
     if(assertValidOperandInput(operand, ch)) {
       if(+operand === 0 && ch !== '.' && !operand.includes('.')) {
@@ -167,7 +172,7 @@ export function Calculator({height = '80vh'}) {
   return <>
     <div className="iphone-calculator" ref={mainEl} style={{height}}>
       <div className="prerender-area">
-        <span ref={prerenderEl}>−</span>
+        <span ref={prerenderEl}></span>
       </div>
       <div className="display">
         <span ref={displayEl}>0</span>
