@@ -16,10 +16,14 @@ application visually scalable by changing only its height.  The calculator
 was tested and rendered as expected in the latest Google Chrome, Mozilla
 Firefox, and Microsoft Edge browsers.
 
-## Launch Instructions
+## Local Launch Instructions
 
 * `git clone https://github.com/aptivator/iphone-calculator-react-exercise.git`
 * `cd iphone-calculator-react-exercise`
 * `npm install`
 * `npm run dev`
 * go to `http://localhost:5173/` in a modern browser of choice
+
+## Live Version
+
+Deployed version can be viewed [here](https://aptivator.github.io/iphone-calculator-react-exercise/).
