@@ -185,11 +185,9 @@ export function Calculator({height = '80vh'}) {
         </div>
         <div className="key-wrapper">
           <div className="key adjustment plus-minus" onClick={toggleMinus}>
-            <span className="small-plus-background" />
-            <span className="small-plus">ᐩ</span>
-            <span className="small-minus-background" />
-            <span className="small-minus"></span>
             <span className="key-value">%</span>
+            <span className="icon-holder plus"><img src="plus-sign.svg" /></span>
+            <span className="icon-holder minus"><img src="minus-sign.svg" /></span>
           </div>
         </div>
         <div className="key-wrapper">

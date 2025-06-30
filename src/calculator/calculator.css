@@ -127,59 +127,37 @@
   font-weight: 400;
 }
 
-.iphone-calculator .adjustment .small-plus,
-.iphone-calculator .adjustment .small-plus-background,
-.iphone-calculator .adjustment .small-minus,
-.iphone-calculator .adjustment .small-minus-background {
-  position: absolute;
-  width: 14%;
-  height: 14%;
-  font-size: 39cqh;
-  line-height: 14cqh;
-  top: 43%;
-  left: 31%;
-  color: #000;
-  z-index: 10;
-  font-weight: bold;
-  border-radius: 25%;
-}
-
-.iphone-calculator .adjustment .small-plus-background {
-  background-color: #a5a5a5;
-  top: 34%;
-  width: 18%;
-  height: 16%;
-  transition: 0.2s ease-in;
-  transition-property: background-color color;
-}
-
-.iphone-calculator .adjustment .small-minus {
-  top: 56.5%;
-  left: 52%;
-  font-size: 30cqh;
-  width: 13%;
-  height: 3%;
-  background-color: #000;
-  border-radius: 0;
-}
-
-.iphone-calculator .adjustment .small-minus-background {
-  top: 50%;
-  left: 51%;
-  width: 17%;
-  height: 18%;
-  background-color: #a5a5a5;
-  transition: 0.2s ease-in;
-  transition-property: background-color color;
-}
-
 .iphone-calculator .adjustment:hover {
   background-color: #d9d9d9;
 }
 
-.iphone-calculator .adjustment:hover .small-plus-background,
-.iphone-calculator .adjustment:hover .small-minus-background {
+.iphone-calculator .adjustment:hover .icon-holder {
   background-color: #d9d9d9;
+}
+
+.iphone-calculator .icon-holder {
+  position: absolute;
+  width: 17%;
+  aspect-ratio: 1;
+  top: 33.5%;
+  left: 33.25%;
+  z-index: 1000;
+  border-radius: 40%;
+  background-color: #a5a5a5;
+  transition: background-color 0.2s ease-in;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70.59%;
+  }
+
+  &.minus {
+    top: 49.75%;
+    left: 49.75%;
+  }
 }
 
 .iphone-calculator .key-wrapper.span-2 .key {
